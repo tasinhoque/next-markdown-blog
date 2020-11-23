@@ -5,7 +5,11 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 const CodeBlock = ({ language, value }) => {
   return (
-    <SyntaxHighlighter showLineNumbers={true} language={language}>
+    <SyntaxHighlighter
+      showLineNumbers={true}
+      language={language}
+      style='vs-dark-plus'
+    >
       {value}
     </SyntaxHighlighter>
   );
